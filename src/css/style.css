@@ -196,3 +196,69 @@
   --inverse-surface: var(--inverse-surface-dark);
   --inverse-on-surface: var(--inverse-surface-dark);
 }
+
+/*  Global reset and box model normalization */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in total width/height */
+}
+
+/* Removes default bullet points from list items */
+li {
+  list-style: none;
+}
+
+/* Normalize block-level display for commonly used inline elements which helps with layout control and spacing */
+a,
+img,
+span,
+input,
+button,
+textarea {
+  display: block;
+}
+
+/* Inherit link color and remove default underline */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Ensure images scale responsively while keeping their aspect ratio */
+img {
+  height: auto;
+}
+
+/* Reset styles for form elements to provide consistent base styling */
+input,
+textarea,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+/* Make buttons show pointer cursor to indicate clickability */
+button {
+  cursor: pointer;
+}
+
+/* Make input and textarea elements take full width of their container */
+input,
+textarea {
+  width: 100%;
+}
+
+/* Remove default outline from input and contenteditable elements when focused */
+input,
+textarea[contenteditable="true"] {
+  outline: none;
+}
+
+/* Allow textareas to be resized vertically only */
+textarea {
+  resize: vertical;
+}

@@ -41,4 +41,108 @@
   --outline-variant-dark: #52443d;
   --inverse-surface-dark: #ede0db;
   --inverse-on-surface-dark: #201a18;
+
+  /* Typography
+  Font family and font size variables for consistent text styling across the project. By Updating these variables to change global typography settings */
+
+  /* Primary font family */
+  --font-primary: "Kumbh Sans", sans-serif;
+
+  /*   Font size scale for different text elements*/
+  --fs-base: 62.5%; /*Base font size for rem calculations*/
+  --fs-display-large: 5.7rem;
+  --fs-display-medium: 4.5rem;
+  --fs-display-small: 3.6rem;
+  --fs-headline-large: 3.2rem;
+  --fs-headline-medium: 2.8rem;
+  --fs-headline-small: 2.4rem;
+  --fs-title-large: 2.2rem;
+  --fs-title-medium: 1.6rem;
+  --fs-title-small: 1.4rem;
+  --fs-body-large: 1.6rem;
+  --fs-body-medium: 1.4rem;
+  --fs-body-small: 1.2rem;
+  --fs-label-large: 1.4rem;
+  --fs-label-medium: 1.2rem;
+  --fs-label-small: 1.1rem;
+
+  /* Line height variables for consistent vertical spacing in typography. By updating these values to control the line height for different text elements settings */
+  --lh-base: 20px;
+  --lh-display-large: 64px;
+  --lh-display-medium: 52px;
+  --lh-display-small: 44px;
+  --lh-headline-large: 40px;
+  --lh-headline-medium: 36px;
+  --lh-headline-small: 32px;
+  --lh-title-large: 28px;
+  --lh-title-medium: 24px;
+  --lh-title-small: 20px;
+  --lh-body-large: 24px;
+  --lh-body-medium: 20px;
+  --lh-body-small: 16px;
+  --lh-label-large: 20px;
+  --lh-label-medium: 16px;
+  --lh-label-small: 16px;
+
+  /* Font weight variables for consistent font thickness */
+  --fw-regular: 400;
+  --fw-medium: 500;
+
+  /* Letter spacing variables for consistent text spacing */
+  --ls-n-025: -0.25px;
+  --ls-p-010: 0.1px;
+  --ls-p-015: 0.15px;
+  --ls-p-025: 0.25px;
+  --ls-p-040: 0.4px;
+  --ls-p-050: 0.5px;
+
+  /* Spacing variables for consistent layout and element positioning by updating these values to control padding, margin, and gap throughout the project.
+  All spacing is based on --spacing-base for easy scaling. */
+  --spacing-base: 4px;
+  --spacing-05: calc(var(--spacing-base) * 0.5);
+  --spacing-1: calc(var(--spacing-base) * 1);
+  --spacing-2: calc(var(--spacing-base) * 2);
+  --spacing-3: calc(var(--spacing-base) * 3);
+  --spacing-4: calc(var(--spacing-base) * 4);
+  --spacing-5: calc(var(--spacing-base) * 5);
+  --spacing-6: calc(var(--spacing-base) * 6);
+  --spacing-7: calc(var(--spacing-base) * 7);
+  --spacing-8: calc(var(--spacing-base) * 8);
+  --spacing-9: calc(var(--spacing-base) * 9);
+  --spacing-10: calc(var(--spacing-base) * 10);
+  --spacing-11: calc(var(--spacing-base) * 11);
+  --spacing-12: calc(var(--spacing-base) * 12);
+  --spacing-13: calc(var(--spacing-base) * 13);
+  --spacing-14: calc(var(--spacing-base) * 14);
+  --spacing-15: calc(var(--spacing-base) * 15);
+  --spacing-16: calc(var(--spacing-base) * 16);
+  --spacing-17: calc(var(--spacing-base) * 17);
+  --spacing-18: calc(var(--spacing-base) * 18);
+  --spacing-19: calc(var(--spacing-base) * 19);
+  --spacing-20: calc(var(--spacing-base) * 20);
+
+  /* Shadow variables for consistent elevation and depth effects. By using these to apply different shadow levels to components for visual hierarchy. */
+  --shadow-1: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+  --shadow-2: 0px 2px 6px 2px #00000026, 0px 1px 2px 0px #0000004d;
+  --shadow-3: 0px 1px 3px 0px #0000004d, 0px 4px 8px 3px #00000026;
+  --shadow-4: 0px 2px 3px 0px #0000004d, 0px 6px 10px 4px #00000026;
+  --shadow-5: 0px 4px 4px 0px #0000004d, 0px 8px 12px 6px #00000026;
+
+  /* Border radius variables for consistent rounded corners on components. By updating these values to control the roundness of UI elements across the project */
+  --radius-extra-small: 4px;
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-extra-large: 28px;
+  --radius-full: 1000px;
+
+  /* Transition duration and easing variables for smooth animations and interactions. By updating these values to control the speed and style of transitions */
+  --tr-duration-short: 200ms;
+  --tr-duration-medium: 400ms;
+  --tr-duration-long: 500ms;
+  --tr-easing-linear: cubic-bezier(0, 0, 1, 1);
+  --tr-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Sidebar width */
+  --sidebar-width: 360px;
 }

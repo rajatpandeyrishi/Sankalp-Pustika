@@ -294,12 +294,11 @@ body {
   color: var(--on-primary); /* Consistent selection styling */
 }
 
-
 /* Typography Scale System */
 
 /* Display Text - Large
    Used for: Hero headlines, major feature introductions
-   Size: 57px (5.7rem) */ 
+   Size: 57px (5.7rem) */
 .text-display-large {
   font-size: var(--fs-display-large);
   line-height: var(--lh-display-large);
@@ -329,13 +328,11 @@ body {
   font-weight: var(--fw-regular);
 }
 
-
 .text-headline-medium {
   font-size: var(--fs-headline-medium);
   line-height: var(--lh-headline-medium);
   font-weight: var(--fw-regular);
 }
-
 
 .text-headline-small {
   font-size: var(--fs-headline-small);
@@ -351,14 +348,12 @@ body {
   font-weight: var(--fw-regular);
 }
 
-
 .text-title-medium {
   font-size: var(--fs-title-medium);
   line-height: var(--lh-title-medium);
   font-weight: var(--fw-regular);
   letter-spacing: var(--ls-p-015);
 }
-
 
 .text-title-small {
   font-size: var(--fs-title-small);
@@ -410,4 +405,29 @@ body {
   line-height: var(--lh-lable-small);
   font-weight: var(--fw-regular);
   letter-spacing: var(--ls-p-010);
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, max-content) lft max-content;
+  background-color: var(--surface-container-low);
+  max-width: var(--sidebar-width);
+  width: 100%;
+  padding: var(--spacing-3);
+  border-radius: 0 var(--radius-large) var(--radius-large) 0;
+  box-shadow: var(--shadow-3);
+  z-index: 4;
+  visibility: hidden;
+  transition: var(--tr-duration-long) var(--tr-easing-emphasized);
+  transition-property: transform, visibility;
+}
+
+.sidebar.active {
+  transform: translateX(100%);
+  visibility: visible;
 }

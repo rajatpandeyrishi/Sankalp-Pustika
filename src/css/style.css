@@ -262,3 +262,152 @@ textarea[contenteditable="true"] {
 textarea {
   resize: vertical;
 }
+
+/* Form Element Styles */
+:where(input, textarea)::placeholder {
+  color: currentColor; /* Maintains consistent color with parent */
+}
+/*    */
+button:disabled {
+  pointer-events: none; /* Prevents interaction with disabled buttons */
+}
+
+/*  Base HTML Elements  */
+html {
+  font-family: var(--font-primary);
+  font-size: var(--fs-base); /* 62.5% for easier rem calculations */
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+  -webkit-tap-highlight-color: transparent; /* Removes mobile tap highlight */
+}
+
+/*   */
+body {
+  background-color: var(--background);
+  color: var(--on-background);
+  font-size: var(--fs-body-medium); /* Default body text size */
+  line-height: var(--lh-body-base);
+}
+
+/*    */
+::selection {
+  background-color: var(--primary);
+  color: var(--on-primary); /* Consistent selection styling */
+}
+
+
+/* Typography Scale System */
+
+/* Display Text - Large
+   Used for: Hero headlines, major feature introductions
+   Size: 57px (5.7rem) */ 
+.text-display-large {
+  font-size: var(--fs-display-large);
+  line-height: var(--lh-display-large);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-n-025); /* Negative tracking for large text */
+}
+
+/* Display Text - Medium & Small
+   Used for: Secondary headers and feature headings */
+.text-display-medium {
+  font-size: var(--fs-display-medium);
+  line-height: var(--lh-display-medium);
+  font-weight: var(--fw-regular);
+}
+
+.text-display-small {
+  font-size: var(--fs-display-small);
+  line-height: var(--lh-display-small);
+  font-weight: var(--fw-regular);
+}
+
+/* Headline Text - All Sizes
+   Used for: Section headers and content organization */
+.text-headline-large {
+  font-size: var(--fs-headline-large);
+  line-height: var(--lh-headline-large);
+  font-weight: var(--fw-regular);
+}
+
+
+.text-headline-medium {
+  font-size: var(--fs-headline-medium);
+  line-height: var(--lh-headline-medium);
+  font-weight: var(--fw-regular);
+}
+
+
+.text-headline-small {
+  font-size: var(--fs-headline-small);
+  line-height: var(--lh-headline-small);
+  font-weight: var(--fw-regular);
+}
+
+/* Title Text Variations
+   Used for: Subsection headers and component titles */
+.text-title-large {
+  font-size: var(--fs-title-large);
+  line-height: var(--lh-title-large);
+  font-weight: var(--fw-regular);
+}
+
+
+.text-title-medium {
+  font-size: var(--fs-title-medium);
+  line-height: var(--lh-title-medium);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-p-015);
+}
+
+
+.text-title-small {
+  font-size: var(--fs-title-small);
+  line-height: var(--lh-title-small);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-p-010);
+}
+
+/* Body Text Styles
+   Used for: Main content, paragraphs, and descriptions */
+.text-body-large {
+  font-size: var(--fs-body-large);
+  line-height: var(--lh-body-large);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-p-025); /* Improved readability */
+}
+
+.text-body-medium {
+  font-size: var(--fs-body-medium);
+  line-height: var(--lh-body-medium);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-p-025);
+}
+
+.text-body-small {
+  font-size: var(--fs-body-small);
+  line-height: var(--lh-body-small);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-p-040);
+}
+
+/* Label Text Styles - FIXME: Correct spelling from 'lable' to 'label' */
+.text-label-large {
+  font-size: var(--fs-lable-large);
+  line-height: var(--lh-lable-large);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-p-010);
+}
+
+.text-label-medium {
+  font-size: var(--fs-lable-medium);
+  line-height: var(--lh-lable-medium);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-p-050);
+}
+
+.text-label-small {
+  font-size: var(--fs-lable-small);
+  line-height: var(--lh-lable-small);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-p-010);
+}

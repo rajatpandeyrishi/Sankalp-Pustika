@@ -44,33 +44,89 @@
   <!-- End of head section -->
 
   <body>
-    <!-- Typography Scale Demo Section
-    Demonstrates the complete type scale hierarchy using Material Design-inspired classes.
-    This helps visualize different text sizes and styles available in the design system  -->
+    <header class="sidebar active" data-sidebar>
+      <div class="wrapper wrapper-1">
+        <a href="/">
+          <img
+            src="./src/images/logo-light.svg"
+            alt="Note-Kepper"
+            class="logo-light"
+          />
+          <img
+            src="./src/images/logo-dark.svg"
+            alt="Note-Kepper"
+            class="logo-light"
+          />
+        </a>
+        <button
+          class="menu-btn icon-btn large"
+          aria-label="close menu"
+          data-sidebar-toggler
+        >
+          <span class="material-symbols-rounded" aria-hidden="true">close</span>
 
-    <!-- Display Text - Used for hero sections and main feature headings -->
-    <p class="text-display-large">Hello World</p>
-    <p class="text-display-medium">Hello World</p>
-    <p class="text-display-small">Hello World</p>
+          <div class="state-layer"></div>
+        </button>
+      </div>
 
-    <!-- Headline Text - Used for section headers and important content blocks -->
-    <p class="text-headline-large">Hello World</p>
-    <p class="text-headline-medium">Hello World</p>
-    <p class="text-headline-small">Hello World</p>
+      <button class="fab" data-note-create-btn>
+        <span class="material-symbols-rounded" aria-hidden="true">add</span>
+        <span class="text text-label-large">New Note</span>
+        <div class="state-layer"></div>
+      </button>
 
-    <!-- Title Text - Used for content titles and subsections -->
-    <p class="text-title-large">Hello World</p>
-    <p class="text-title-medium">Hello World</p>
-    <p class="text-title-small">Hello World</p>
+      <div class="wrapper wrapper-2"></div>
 
-    <!-- Body Text - Main content typography -->
-    <p class="text-body-large">Hello World</p>
-    <p class="text-body-medium">Hello World</p>
-    <p class="text-body-small">Hello World</p>
+      <h2 class="text-title-small">NOTEBOOKS</h2>
+      <button
+        class="icon-btn small"
+        data-tooltip="Create new notebook"
+        aria-label="Create new notebook"
+        data-add-notebook
+      >
+        <span class="material-symbols-rounded" aria-hidden="true">add</span>
+        <div class="state-layer"></div>
+      </button>
 
-    <!-- Label Text - Used for UI elements and form labels -->
-    <p class="text-lable-large">Hello World</p>
-    <p class="text-lable-medium">Hello World</p>
-    <p class="text-lable-small">Hello World</p>
+      <nav class="nav custom-scrollbar" data-sidebar-list>
+        <div class="na-item">
+          <span class="text text-label-large" data-notebook-field
+            >My Notebook</span
+          >
+          <button
+            class="icon-btn small"
+            aria-label="Edit notebook"
+            data-tooltip="Edit notebook"
+            data-edit-btn
+          >
+            <span class="material-symbols-rounded" aria-hidden="true"
+              >edit</span
+            >
+            <div class="state-layer"></div>
+          </button>
+
+          <button
+            class="icon-btn small"
+            aria-label="Delete notebook"
+            data-tooltip="Delete notebook"
+            data-delete-btn
+          >
+            <span class="material-symbols-rounded" aria-hidden="true"
+              >delete</span
+            >
+            <div class="state-layer"></div>
+          </button>
+
+          <div class="state-layer"></div>
+        </div>
+      </nav>
+      <div class="cp-info">
+        <span class="text-label-large"
+          >©2025 <strong>rajatpandeyrishi®</strong>
+        </span>
+      </div>
+    </header>
+
+    <div class="overlay" data-sidebar-overlay data-sidebar-toggler></div>
   </body>
 </html>
